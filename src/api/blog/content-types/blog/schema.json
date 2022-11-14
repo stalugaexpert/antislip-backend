@@ -71,6 +71,22 @@
       "type": "boolean",
       "default": false,
       "required": true
+    },
+    "postImage": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        },
+        "deepl": {
+          "translate": "translate"
+        }
+      },
+      "required": true
     }
   }
 }
