@@ -16,6 +16,24 @@ module.exports = ({ env }) => ({
   seo: {
     enabled: true,
   },
+  email: {
+    config: {
+      provider: 'nodemailer',
+      providerOptions: {
+        host: env('MAIL_HOST', 'smtp.example.com'),
+        port: env('MAIL_PORT', 587),
+        auth: {
+          user: env('MAIL_ADDRESS'),
+          pass: env('MAIL_PASSWORD'),
+        },
+        // ... any custom nodemailer options
+      },
+      settings: {
+        defaultFrom: 'hello@example.com',
+        defaultReplyTo: 'hello@example.com',
+      },
+    },
+  },
   ckeditor: {
     enabled: true,
     config:{
