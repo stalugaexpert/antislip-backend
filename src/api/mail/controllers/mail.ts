@@ -928,7 +928,7 @@ export default {
       const { email, phone, name } = JSON.parse(ctx.request.body)
       await strapi.plugins['email'].services.email.sendTemplatedEmail(
         {
-          to: 'shadooowpl@gmail.com',
+          to: 'office@e-nubes.com',
           // from: is not specified, the defaultFrom is used.
         },
           emailTemplateContact,
@@ -947,7 +947,7 @@ export default {
       const { email, message, name } = JSON.parse(ctx.request.body)
       await strapi.plugins['email'].services.email.sendTemplatedEmail(
         {
-          to: 'shadooowpl@gmail.com',
+          to: 'office@e-nubes.com',
           // from: is not specified, the defaultFrom is used.
         },
           emailTemplateMessage,
