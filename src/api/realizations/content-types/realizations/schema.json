@@ -4,7 +4,8 @@
   "info": {
     "singularName": "realizations",
     "pluralName": "our-realizations",
-    "displayName": "Our realizations"
+    "displayName": "Our realizations",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -63,12 +64,37 @@
       "type": "string"
     },
     "photos": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "videos"
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        },
+        "deepl": {
+          "translate": "translate"
+        }
+      }
+    },
+    "area": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "integer"
+    },
+    "mainImage": {
       "allowedTypes": [
         "images",
         "videos"
       ],
       "type": "media",
-      "multiple": true,
+      "multiple": false,
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -78,14 +104,6 @@
         }
       },
       "required": true
-    },
-    "area": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "integer"
     }
   }
 }
