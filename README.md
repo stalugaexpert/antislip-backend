@@ -1,4 +1,10 @@
-# 🚀 Getting started with Strapi
+This is Antislip project backend-side bootstrapped with Strapi. This is a CMS for anti-slip page, where administrators can edit and manage content on the page in a very easy and intuitive way. 
+
+Page features include CRUD functionality (blog) with ensuring e2e type safety using graphQL, graphQL codegen & apollo client, localization and multilanguage support, contact form with saving data into database and sending owner a notification mail using Nodemailer (backend side), secured with Google reCaptcha. You can check the final deployment of the page under this link:
+
+https://anti-slip.io
+
+## 🚀 Getting started
 
 Strapi comes with a full featured [Command Line Interface](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html) (CLI) which lets you scaffold and manage your project in seconds.
 
