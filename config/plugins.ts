@@ -23,10 +23,8 @@ module.exports = ({ env }) => ({
         apiKey: env("SENDGRID_API_KEY"),
       },
       settings: {
-        // defaultFrom: "services@anti-slip.io",
-        // defaultReplyTo: "services@anti-slip.io",
-        defaultFrom: "em6231.anti-slip.io",
-        defaultReplyTo: "em6231.anti-slip.io",
+        defaultFrom: "services@anti-slip.io",
+        defaultReplyTo: "services@anti-slip.io",
       },
     },
     // config: {
